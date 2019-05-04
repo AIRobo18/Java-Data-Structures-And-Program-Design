@@ -1,0 +1,2499 @@
+=== PART 1 WITH SAMPLEDICTIONARY.TXT WITH HASHTABLE START SIZE OF 5===
+
+***THE MAIN DICTIONARY***
+The size of hash table is: 5
+0     null
+1      KEY: spelling  VALUE: spelling
+2     null
+3     null
+4     null
+
+***END OF THE MAIN DICTIONARY***
+
+***THE SpellChecker RESULTS***
+
+^This^ ^is^ ^a^ ^very^ ^simple^ ^file^ ^with^ ^some^ ^text^ ^to^ ^be^ ^checked^
+^by^ ^our^ ^prototype^ spelling ^checker^.
+
+^It^ ^has^ ^some^ ^words^ ^that^ ^should^ ^not^ ^be^ ^recognized^.
+
+(^Milton^ ^Berle^ ^Quotes^)
+
+"^I'd^ ^rather^ ^be^ ^a^ "^could^ ^be^" ^if^ ^I^ ^cannot^ ^be^ ^an^ ^are^;
+^because^ ^a^ "^could^ ^be^" ^is^ ^a^ ^maybe^ ^who^ ^is^ ^reaching^ ^for^ ^a^ ^star^.
+^I'd^ ^rather^ ^be^ ^a^ "^has^ ^been^" ^than^ ^a^ "^might^ ^have^ ^been^", ^by^ ^far^;
+^for^ ^a^ "^might^ ^have^ ^been^" ^has^ ^never^ ^been^, ^but^ ^a^ ^has^ ^was^ ^once^ ^an^ ^are^."
+
+"^A^ ^committee^ ^is^ ^a^ ^group^ ^that^ ^keeps^ ^minutes^ ^and^ ^loses^ ^hours^."
+
+"^If^ ^evolution^ ^really^ ^works^, ^how^ ^come^ ^mothers^ ^only^ ^have^ ^two^ ^hands^?"
+
+"^If^ ^opportunity^ ^doesn't^ ^knock^, ^build^ ^a^ ^door^."
+
+"^Laughter^ ^is^ ^an^ ^instant^ ^vacation^."
+
+"^I^ ^live^ ^to^ ^laugh^, ^and^ ^I^ ^laugh^ ^to^ ^live^."
+
+"^We^ ^owe^ ^a^ ^lot^ ^to^ ^Thomas^ ^Edison^ - ^if^ ^it^ ^wasn't^ ^for^ ^him^,
+^we'd^ ^be^ ^watching^ ^television^ ^by^ ^candlelight^."
+
+"^You^ ^can^ ^lead^ ^a^ ^man^ ^to^ ^Congress^, ^but^ ^you^ ^can't^ ^make^ ^him^ ^think^."
+
+"^A^ ^man^ ^falls^ ^down^ ^a^ ^flight^ ^of^ ^stairs^ ^and^ ^somebody^ ^rushes^
+^over^ ^to^ ^him^ ^and^ ^asks^, ^Did^ ^you^ ^miss^ ^a^ ^step^? ^No^, ^he^ ^answers^,
+^I^ ^hit^ ^every^ ^one^ ^of^ ^them^!!!"
+
+"^They^ ^have^ ^finally^ ^come^ ^up^ ^with^ ^the^ ^perfect^ ^office^ ^computer^.
+^If^ ^it^ ^makes^ ^a^ ^mistake^, ^it^ ^blames^ ^another^ ^computer^."
+***THE END***
+
+***HANDLING THE MISSPELLED WORDS***
+
+Misspelled Dictionary Before has 124 entries:
+The size of hash table is: 397
+0     null
+1     null
+2     null
+3      KEY: build  VALUE: 1
+4     null
+5     null
+6     null
+7     null
+8     null
+9     null
+10     KEY: computer  VALUE: 2
+11    null
+12    null
+13    null
+14     KEY: blames  VALUE: 1
+15    null
+16    null
+17    null
+18    null
+19    null
+20    null
+21    null
+22    null
+23    null
+24    null
+25     KEY: could  VALUE: 2
+26    null
+27    null
+28    null
+29    null
+30    null
+31     KEY: mistake  VALUE: 1
+32    null
+33    null
+34    null
+35    null
+36    null
+37     KEY: some  VALUE: 2
+38    null
+39    null
+40    null
+41    null
+42    null
+43    null
+44    null
+45    null
+46     KEY: our  VALUE: 1
+47     KEY: really  VALUE: 1
+48    null
+49    null
+50    null
+51    null
+52    null
+53    null
+54    null
+55    null
+56    null
+57    null
+58     KEY: think  VALUE: 1
+59    null
+60     KEY: berle  VALUE: 1
+61     KEY: might  VALUE: 2
+62     KEY: opportunity  VALUE: 1
+63    null
+64    null
+65     KEY: doesn't  VALUE: 1
+66    null
+67    null
+68     KEY: the  VALUE: 1
+69    null
+70     KEY: congress  VALUE: 1
+71    null
+72    null
+73    null
+74     KEY: because  VALUE: 1
+75    null
+76    null
+77    null
+78    null
+79    null
+80     KEY: words  VALUE: 1
+81    null
+82     KEY: can't  VALUE: 1
+83    null
+84    null
+85     KEY: hands  VALUE: 1
+86    null
+87     KEY: answers  VALUE: 1
+88     KEY: him  VALUE: 3
+89    null
+90    null
+91    null
+92     KEY: not  VALUE: 1
+93    null
+94    null
+95     KEY: owe  VALUE: 1
+96     KEY: hit  VALUE: 1
+97     KEY: a  VALUE: 18
+98    null
+99    null
+100   null
+101   null
+102   null
+103   null
+104   null
+105    KEY: i  VALUE: 4
+106   null
+107   null
+108   null
+109    KEY: than  VALUE: 1
+110    KEY: keeps  VALUE: 1
+111    KEY: makes  VALUE: 1
+112   null
+113    KEY: with  VALUE: 2
+114    KEY: somebody  VALUE: 1
+115    KEY: that  VALUE: 2
+116    KEY: down  VALUE: 1
+117    KEY: star  VALUE: 1
+118    KEY: over  VALUE: 1
+119    KEY: checked  VALUE: 1
+120   null
+121   null
+122   null
+123   null
+124    KEY: never  VALUE: 1
+125   null
+126   null
+127   null
+128   null
+129   null
+130   null
+131   null
+132   null
+133    KEY: checker  VALUE: 1
+134    KEY: to  VALUE: 6
+135   null
+136   null
+137    KEY: recognized  VALUE: 1
+138    KEY: another  VALUE: 1
+139   null
+140   null
+141   null
+142   null
+143   null
+144    KEY: laugh  VALUE: 2
+145    KEY: office  VALUE: 1
+146    KEY: two  VALUE: 1
+147   null
+148   null
+149    KEY: he  VALUE: 1
+150   null
+151   null
+152   null
+153   null
+154   null
+155    KEY: group  VALUE: 1
+156    KEY: lot  VALUE: 1
+157   null
+158   null
+159    KEY: reaching  VALUE: 1
+160   null
+161   null
+162   null
+163   null
+164   null
+165   null
+166    KEY: up  VALUE: 1
+167   null
+168   null
+169   null
+170   null
+171    KEY: minutes  VALUE: 1
+172   null
+173   null
+174    KEY: thomas  VALUE: 1
+175   null
+176   null
+177   null
+178    KEY: come  VALUE: 2
+179    KEY: very  VALUE: 1
+180   null
+181    KEY: if  VALUE: 5
+182    KEY: who  VALUE: 1
+183   null
+184    KEY: have  VALUE: 4
+185    KEY: i'd  VALUE: 2
+186   null
+187   null
+188   null
+189    KEY: prototype  VALUE: 1
+190    KEY: milton  VALUE: 1
+191   null
+192    KEY: only  VALUE: 1
+193   null
+194    KEY: is  VALUE: 5
+195    KEY: it  VALUE: 4
+196    KEY: mothers  VALUE: 1
+197    KEY: can  VALUE: 1
+198    KEY: falls  VALUE: 1
+199   null
+200   null
+201   null
+202   null
+203   null
+204   null
+205    KEY: did  VALUE: 1
+206   null
+207   null
+208   null
+209   null
+210   null
+211   null
+212   null
+213    KEY: one  VALUE: 1
+214   null
+215   null
+216   null
+217    KEY: we  VALUE: 1
+218    KEY: television  VALUE: 1
+219   null
+220   null
+221   null
+222   null
+223   null
+224   null
+225   null
+226   null
+227   null
+228   null
+229   null
+230    KEY: we'd  VALUE: 1
+231   null
+232    KEY: them  VALUE: 1
+233   null
+234    KEY: rushes  VALUE: 1
+235   null
+236   null
+237   null
+238    KEY: been  VALUE: 4
+239    KEY: step  VALUE: 1
+240   null
+241   null
+242    KEY: watching  VALUE: 1
+243    KEY: has  VALUE: 4
+244    KEY: they  VALUE: 1
+245    KEY: candlelight  VALUE: 1
+246   null
+247   null
+248   null
+249   null
+250   null
+251   null
+252    KEY: every  VALUE: 1
+253   null
+254    KEY: rather  VALUE: 2
+255   null
+256    KEY: and  VALUE: 4
+257   null
+258   null
+259    KEY: but  VALUE: 2
+260   null
+261   null
+262   null
+263   null
+264    KEY: lead  VALUE: 1
+265   null
+266   null
+267   null
+268   null
+269    KEY: door  VALUE: 1
+270   null
+271   null
+272   null
+273   null
+274   null
+275   null
+276   null
+277   null
+278   null
+279    KEY: man  VALUE: 2
+280   null
+281   null
+282   null
+283   null
+284    KEY: how  VALUE: 1
+285   null
+286   null
+287   null
+288   null
+289    KEY: finally  VALUE: 1
+290    KEY: once  VALUE: 1
+291   null
+292   null
+293   null
+294   null
+295   null
+296    KEY: quotes  VALUE: 1
+297    KEY: works  VALUE: 1
+298    KEY: cannot  VALUE: 1
+299   null
+300   null
+301   null
+302   null
+303   null
+304   null
+305    KEY: far  VALUE: 1
+306   null
+307   null
+308   null
+309   null
+310    KEY: stairs  VALUE: 1
+311   null
+312   null
+313   null
+314   null
+315   null
+316   null
+317   null
+318   null
+319   null
+320    KEY: make  VALUE: 1
+321    KEY: knock  VALUE: 1
+322    KEY: vacation  VALUE: 1
+323   null
+324    KEY: hours  VALUE: 1
+325   null
+326   null
+327    KEY: text  VALUE: 1
+328   null
+329    KEY: committee  VALUE: 1
+330    KEY: miss  VALUE: 1
+331   null
+332   null
+333   null
+334   null
+335    KEY: instant  VALUE: 1
+336    KEY: edison  VALUE: 1
+337    KEY: laughter  VALUE: 1
+338    KEY: an  VALUE: 3
+339   null
+340   null
+341   null
+342    KEY: you  VALUE: 3
+343    KEY: for  VALUE: 3
+344   null
+345    KEY: no  VALUE: 1
+346   null
+347   null
+348   null
+349   null
+350   null
+351   null
+352   null
+353   null
+354   null
+355    KEY: should  VALUE: 1
+356    KEY: maybe  VALUE: 1
+357   null
+358   null
+359   null
+360    KEY: be  VALUE: 8
+361   null
+362    KEY: this  VALUE: 1
+363   null
+364   null
+365   null
+366    KEY: was  VALUE: 1
+367    KEY: of  VALUE: 2
+368   null
+369    KEY: asks  VALUE: 1
+370    KEY: evolution  VALUE: 1
+371   null
+372   null
+373    KEY: wasn't  VALUE: 1
+374   null
+375   null
+376   null
+377   null
+378    KEY: perfect  VALUE: 1
+379   null
+380    KEY: by  VALUE: 3
+381    KEY: loses  VALUE: 1
+382    KEY: simple  VALUE: 1
+383    KEY: are  VALUE: 2
+384    KEY: file  VALUE: 1
+385   null
+386   null
+387   null
+388   null
+389   null
+390   null
+391   null
+392   null
+393    KEY: live  VALUE: 2
+394    KEY: flight  VALUE: 1
+395   null
+396   null
+
+***Looking for words to be added to the main dictionary***
+build 1 ---> leaving
+computer 2 ---> moving to the main dictionary
+blames 1 ---> leaving
+could 2 ---> moving to the main dictionary
+mistake 1 ---> leaving
+some 2 ---> moving to the main dictionary
+our 1 ---> leaving
+really 1 ---> leaving
+think 1 ---> leaving
+berle 1 ---> leaving
+might 2 ---> moving to the main dictionary
+opportunity 1 ---> leaving
+doesn't 1 ---> leaving
+the 1 ---> leaving
+congress 1 ---> leaving
+because 1 ---> leaving
+words 1 ---> leaving
+can't 1 ---> leaving
+hands 1 ---> leaving
+answers 1 ---> leaving
+him 3 ---> moving to the main dictionary
+not 1 ---> leaving
+owe 1 ---> leaving
+hit 1 ---> leaving
+a 18 ---> moving to the main dictionary
+i 4 ---> moving to the main dictionary
+than 1 ---> leaving
+keeps 1 ---> leaving
+makes 1 ---> leaving
+with 2 ---> moving to the main dictionary
+somebody 1 ---> leaving
+that 2 ---> moving to the main dictionary
+down 1 ---> leaving
+star 1 ---> leaving
+over 1 ---> leaving
+checked 1 ---> leaving
+never 1 ---> leaving
+checker 1 ---> leaving
+to 6 ---> moving to the main dictionary
+recognized 1 ---> leaving
+another 1 ---> leaving
+laugh 2 ---> moving to the main dictionary
+office 1 ---> leaving
+two 1 ---> leaving
+he 1 ---> leaving
+group 1 ---> leaving
+lot 1 ---> leaving
+reaching 1 ---> leaving
+up 1 ---> leaving
+minutes 1 ---> leaving
+thomas 1 ---> leaving
+come 2 ---> moving to the main dictionary
+very 1 ---> leaving
+if 5 ---> moving to the main dictionary
+who 1 ---> leaving
+have 4 ---> moving to the main dictionary
+i'd 2 ---> moving to the main dictionary
+prototype 1 ---> leaving
+milton 1 ---> leaving
+only 1 ---> leaving
+is 5 ---> moving to the main dictionary
+it 4 ---> moving to the main dictionary
+mothers 1 ---> leaving
+can 1 ---> leaving
+falls 1 ---> leaving
+did 1 ---> leaving
+one 1 ---> leaving
+we 1 ---> leaving
+television 1 ---> leaving
+we'd 1 ---> leaving
+them 1 ---> leaving
+rushes 1 ---> leaving
+been 4 ---> moving to the main dictionary
+step 1 ---> leaving
+watching 1 ---> leaving
+has 4 ---> moving to the main dictionary
+they 1 ---> leaving
+candlelight 1 ---> leaving
+every 1 ---> leaving
+rather 2 ---> moving to the main dictionary
+and 4 ---> moving to the main dictionary
+but 2 ---> moving to the main dictionary
+lead 1 ---> leaving
+door 1 ---> leaving
+man 2 ---> moving to the main dictionary
+how 1 ---> leaving
+finally 1 ---> leaving
+once 1 ---> leaving
+quotes 1 ---> leaving
+works 1 ---> leaving
+cannot 1 ---> leaving
+far 1 ---> leaving
+stairs 1 ---> leaving
+make 1 ---> leaving
+knock 1 ---> leaving
+vacation 1 ---> leaving
+hours 1 ---> leaving
+text 1 ---> leaving
+committee 1 ---> leaving
+miss 1 ---> leaving
+instant 1 ---> leaving
+edison 1 ---> leaving
+laughter 1 ---> leaving
+an 3 ---> moving to the main dictionary
+you 3 ---> moving to the main dictionary
+for 3 ---> moving to the main dictionary
+no 1 ---> leaving
+should 1 ---> leaving
+maybe 1 ---> leaving
+be 8 ---> moving to the main dictionary
+this 1 ---> leaving
+was 1 ---> leaving
+of 2 ---> moving to the main dictionary
+asks 1 ---> leaving
+evolution 1 ---> leaving
+wasn't 1 ---> leaving
+perfect 1 ---> leaving
+by 3 ---> moving to the main dictionary
+loses 1 ---> leaving
+simple 1 ---> leaving
+are 2 ---> moving to the main dictionary
+file 1 ---> leaving
+live 2 ---> moving to the main dictionary
+flight 1 ---> leaving
+
+Misspelled Dictionary After has 93 entries:
+The size of hash table is: 397
+0     null
+1     null
+2     null
+3      KEY: build  VALUE: 1
+4     null
+5     null
+6     null
+7     null
+8     null
+9     null
+10     notIn
+11    null
+12    null
+13    null
+14     KEY: blames  VALUE: 1
+15    null
+16    null
+17    null
+18    null
+19    null
+20    null
+21    null
+22    null
+23    null
+24    null
+25     notIn
+26    null
+27    null
+28    null
+29    null
+30    null
+31     KEY: mistake  VALUE: 1
+32    null
+33    null
+34    null
+35    null
+36    null
+37     notIn
+38    null
+39    null
+40    null
+41    null
+42    null
+43    null
+44    null
+45    null
+46     KEY: our  VALUE: 1
+47     KEY: really  VALUE: 1
+48    null
+49    null
+50    null
+51    null
+52    null
+53    null
+54    null
+55    null
+56    null
+57    null
+58     KEY: think  VALUE: 1
+59    null
+60     KEY: berle  VALUE: 1
+61     notIn
+62     KEY: opportunity  VALUE: 1
+63    null
+64    null
+65     KEY: doesn't  VALUE: 1
+66    null
+67    null
+68     KEY: the  VALUE: 1
+69    null
+70     KEY: congress  VALUE: 1
+71    null
+72    null
+73    null
+74     KEY: because  VALUE: 1
+75    null
+76    null
+77    null
+78    null
+79    null
+80     KEY: words  VALUE: 1
+81    null
+82     KEY: can't  VALUE: 1
+83    null
+84    null
+85     KEY: hands  VALUE: 1
+86    null
+87     KEY: answers  VALUE: 1
+88     notIn
+89    null
+90    null
+91    null
+92     KEY: not  VALUE: 1
+93    null
+94    null
+95     KEY: owe  VALUE: 1
+96     KEY: hit  VALUE: 1
+97     notIn
+98    null
+99    null
+100   null
+101   null
+102   null
+103   null
+104   null
+105    notIn
+106   null
+107   null
+108   null
+109    KEY: than  VALUE: 1
+110    KEY: keeps  VALUE: 1
+111    KEY: makes  VALUE: 1
+112   null
+113    notIn
+114    KEY: somebody  VALUE: 1
+115    notIn
+116    KEY: down  VALUE: 1
+117    KEY: star  VALUE: 1
+118    KEY: over  VALUE: 1
+119    KEY: checked  VALUE: 1
+120   null
+121   null
+122   null
+123   null
+124    KEY: never  VALUE: 1
+125   null
+126   null
+127   null
+128   null
+129   null
+130   null
+131   null
+132   null
+133    KEY: checker  VALUE: 1
+134    notIn
+135   null
+136   null
+137    KEY: recognized  VALUE: 1
+138    KEY: another  VALUE: 1
+139   null
+140   null
+141   null
+142   null
+143   null
+144    notIn
+145    KEY: office  VALUE: 1
+146    KEY: two  VALUE: 1
+147   null
+148   null
+149    KEY: he  VALUE: 1
+150   null
+151   null
+152   null
+153   null
+154   null
+155    KEY: group  VALUE: 1
+156    KEY: lot  VALUE: 1
+157   null
+158   null
+159    KEY: reaching  VALUE: 1
+160   null
+161   null
+162   null
+163   null
+164   null
+165   null
+166    KEY: up  VALUE: 1
+167   null
+168   null
+169   null
+170   null
+171    KEY: minutes  VALUE: 1
+172   null
+173   null
+174    KEY: thomas  VALUE: 1
+175   null
+176   null
+177   null
+178    notIn
+179    KEY: very  VALUE: 1
+180   null
+181    notIn
+182    KEY: who  VALUE: 1
+183   null
+184    notIn
+185    notIn
+186   null
+187   null
+188   null
+189    KEY: prototype  VALUE: 1
+190    KEY: milton  VALUE: 1
+191   null
+192    KEY: only  VALUE: 1
+193   null
+194    notIn
+195    notIn
+196    KEY: mothers  VALUE: 1
+197    KEY: can  VALUE: 1
+198    KEY: falls  VALUE: 1
+199   null
+200   null
+201   null
+202   null
+203   null
+204   null
+205    KEY: did  VALUE: 1
+206   null
+207   null
+208   null
+209   null
+210   null
+211   null
+212   null
+213    KEY: one  VALUE: 1
+214   null
+215   null
+216   null
+217    KEY: we  VALUE: 1
+218    KEY: television  VALUE: 1
+219   null
+220   null
+221   null
+222   null
+223   null
+224   null
+225   null
+226   null
+227   null
+228   null
+229   null
+230    KEY: we'd  VALUE: 1
+231   null
+232    KEY: them  VALUE: 1
+233   null
+234    KEY: rushes  VALUE: 1
+235   null
+236   null
+237   null
+238    notIn
+239    KEY: step  VALUE: 1
+240   null
+241   null
+242    KEY: watching  VALUE: 1
+243    notIn
+244    KEY: they  VALUE: 1
+245    KEY: candlelight  VALUE: 1
+246   null
+247   null
+248   null
+249   null
+250   null
+251   null
+252    KEY: every  VALUE: 1
+253   null
+254    notIn
+255   null
+256    notIn
+257   null
+258   null
+259    notIn
+260   null
+261   null
+262   null
+263   null
+264    KEY: lead  VALUE: 1
+265   null
+266   null
+267   null
+268   null
+269    KEY: door  VALUE: 1
+270   null
+271   null
+272   null
+273   null
+274   null
+275   null
+276   null
+277   null
+278   null
+279    notIn
+280   null
+281   null
+282   null
+283   null
+284    KEY: how  VALUE: 1
+285   null
+286   null
+287   null
+288   null
+289    KEY: finally  VALUE: 1
+290    KEY: once  VALUE: 1
+291   null
+292   null
+293   null
+294   null
+295   null
+296    KEY: quotes  VALUE: 1
+297    KEY: works  VALUE: 1
+298    KEY: cannot  VALUE: 1
+299   null
+300   null
+301   null
+302   null
+303   null
+304   null
+305    KEY: far  VALUE: 1
+306   null
+307   null
+308   null
+309   null
+310    KEY: stairs  VALUE: 1
+311   null
+312   null
+313   null
+314   null
+315   null
+316   null
+317   null
+318   null
+319   null
+320    KEY: make  VALUE: 1
+321    KEY: knock  VALUE: 1
+322    KEY: vacation  VALUE: 1
+323   null
+324    KEY: hours  VALUE: 1
+325   null
+326   null
+327    KEY: text  VALUE: 1
+328   null
+329    KEY: committee  VALUE: 1
+330    KEY: miss  VALUE: 1
+331   null
+332   null
+333   null
+334   null
+335    KEY: instant  VALUE: 1
+336    KEY: edison  VALUE: 1
+337    KEY: laughter  VALUE: 1
+338    notIn
+339   null
+340   null
+341   null
+342    notIn
+343    notIn
+344   null
+345    KEY: no  VALUE: 1
+346   null
+347   null
+348   null
+349   null
+350   null
+351   null
+352   null
+353   null
+354   null
+355    KEY: should  VALUE: 1
+356    KEY: maybe  VALUE: 1
+357   null
+358   null
+359   null
+360    notIn
+361   null
+362    KEY: this  VALUE: 1
+363   null
+364   null
+365   null
+366    KEY: was  VALUE: 1
+367    notIn
+368   null
+369    KEY: asks  VALUE: 1
+370    KEY: evolution  VALUE: 1
+371   null
+372   null
+373    KEY: wasn't  VALUE: 1
+374   null
+375   null
+376   null
+377   null
+378    KEY: perfect  VALUE: 1
+379   null
+380    notIn
+381    KEY: loses  VALUE: 1
+382    KEY: simple  VALUE: 1
+383    notIn
+384    KEY: file  VALUE: 1
+385   null
+386   null
+387   null
+388   null
+389   null
+390   null
+391   null
+392   null
+393    notIn
+394    KEY: flight  VALUE: 1
+395   null
+396   null
+
+Number of probes in main Dictionary 71
+Number of probes in main MisspelledDictionary 190
+
+Process finished with exit code 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===PART 1 WITH SAMPLEDICTIONARY.TXT WITH HASHTABLE START SIZE OF 101===
+
+***THE MAIN DICTIONARY***
+The size of hash table is: 211
+0     null
+1     null
+2     null
+3      KEY: are  VALUE: are
+4      KEY: instant  VALUE: instant
+5     null
+6      KEY: watching  VALUE: watching
+7     null
+8     null
+9     null
+10     KEY: vacation  VALUE: vacation
+11    null
+12    null
+13     KEY: could  VALUE: could
+14     KEY: once  VALUE: once
+15    null
+16     KEY: reaching  VALUE: reaching
+17     KEY: but  VALUE: but
+18    null
+19    null
+20    null
+21    null
+22    null
+23    null
+24    null
+25    null
+26    null
+27    null
+28    null
+29    null
+30    null
+31    null
+32    null
+33    null
+34    null
+35    null
+36    null
+37     KEY: text  VALUE: text
+38    null
+39    null
+40     KEY: group  VALUE: group
+41    null
+42    null
+43     KEY: lead  VALUE: lead
+44    null
+45     KEY: man  VALUE: man
+46    null
+47     KEY: minutes  VALUE: minutes
+48    null
+49    null
+50    null
+51    null
+52    null
+53    null
+54    null
+55    null
+56    null
+57    null
+58    null
+59     KEY: our  VALUE: our
+60    null
+61    null
+62    null
+63    null
+64    null
+65    null
+66     KEY: wasn't  VALUE: wasn't
+67     KEY: have  VALUE: have
+68     KEY: opportunity  VALUE: opportunity
+69     KEY: think  VALUE: think
+70     KEY: two  VALUE: two
+71     KEY: checked  VALUE: checked
+72     KEY: cannot  VALUE: cannot
+73     KEY: with  VALUE: with
+74    null
+75     KEY: door  VALUE: door
+76    null
+77    null
+78    null
+79     KEY: rather  VALUE: rather
+80    null
+81    null
+82    null
+83    null
+84     KEY: hours  VALUE: hours
+85     KEY: checker  VALUE: checker
+86     KEY: for  VALUE: for
+87     KEY: never  VALUE: never
+88     KEY: might  VALUE: might
+89     KEY: and  VALUE: and
+90     KEY: i'd  VALUE: i'd
+91     KEY: than  VALUE: than
+92    null
+93     KEY: quotes  VALUE: quotes
+94    null
+95    null
+96    null
+97     KEY: that  VALUE: that
+98     KEY: can't  VALUE: can't
+99     KEY: has  VALUE: has
+100    KEY: a  VALUE: a
+101    KEY: only  VALUE: only
+102   null
+103   null
+104   null
+105    KEY: i  VALUE: i
+106   null
+107   null
+108    KEY: owe  VALUE: owe
+109   null
+110   null
+111   null
+112   null
+113   null
+114    KEY: how  VALUE: how
+115   null
+116   null
+117   null
+118    KEY: really  VALUE: really
+119   null
+120    KEY: to  VALUE: to
+121    KEY: committee  VALUE: committee
+122   null
+123   null
+124   null
+125   null
+126   null
+127   null
+128   null
+129    KEY: him  VALUE: him
+130   null
+131   null
+132   null
+133    KEY: this  VALUE: this
+134   null
+135   null
+136    KEY: simple  VALUE: simple
+137    KEY: make  VALUE: make
+138   null
+139   null
+140   null
+141    KEY: build  VALUE: build
+142    KEY: can  VALUE: can
+143   null
+144    KEY: because  VALUE: because
+145   null
+146    KEY: mothers  VALUE: mothers
+147    KEY: very  VALUE: very
+148   null
+149    KEY: television  VALUE: television
+150   null
+151   null
+152   null
+153   null
+154   null
+155   null
+156   null
+157    KEY: lot  VALUE: lot
+158   null
+159   null
+160   null
+161   null
+162    KEY: we'd  VALUE: we'd
+163    KEY: an  VALUE: an
+164   null
+165    KEY: was  VALUE: was
+166   null
+167    KEY: who  VALUE: who
+168   null
+169   null
+170    KEY: hands  VALUE: hands
+171    KEY: come  VALUE: come
+172   null
+173   null
+174   null
+175    KEY: words  VALUE: words
+176    KEY: prototype  VALUE: prototype
+177    KEY: doesn't  VALUE: doesn't
+178    KEY: some  VALUE: some
+179   null
+180    KEY: not  VALUE: not
+181    KEY: works  VALUE: works
+182   null
+183   null
+184   null
+185    KEY: be  VALUE: be
+186   null
+187    KEY: loses  VALUE: loses
+188   null
+189   null
+190   null
+191    KEY: file  VALUE: file
+192    KEY: if  VALUE: if
+193    KEY: star  VALUE: star
+194    KEY: should  VALUE: should
+195   null
+196    KEY: maybe  VALUE: maybe
+197   null
+198   null
+199   null
+200   null
+201   null
+202    KEY: you  VALUE: you
+203    KEY: we  VALUE: we
+204   null
+205    KEY: by  VALUE: by
+206    KEY: is  VALUE: is
+207    KEY: it  VALUE: it
+208   null
+209   null
+210   null
+
+***END OF THE MAIN DICTIONARY***
+
+***THE SpellChecker RESULTS***
+
+^This^ is a very simple file with some text to be checked
+by our prototype ^spelling^ checker.
+
+^It^ has some words that should not be ^recognized^.
+
+(^Milton^ ^Berle^ ^Quotes^)
+
+"^I'd^ rather be a "could be" if ^I^ cannot be an are;
+because a "could be" is a maybe who is reaching for a star.
+^I'd^ rather be a "has ^been^" than a "might have ^been^", by ^far^;
+for a "might have ^been^" has never ^been^, but a has was once an are."
+
+"^A^ committee is a group that ^keeps^ minutes and loses hours."
+
+"^If^ ^evolution^ really works, how come mothers only have two hands?"
+
+"^If^ opportunity doesn't ^knock^, build a door."
+
+"^Laughter^ is an instant vacation."
+
+"^I^ ^live^ to ^laugh^, and ^I^ ^laugh^ to ^live^."
+
+"^We^ owe a lot to ^Thomas^ ^Edison^ - if it wasn't for him,
+we'd be watching television by ^candlelight^."
+
+"^You^ can lead a man to ^Congress^, but you can't make him think."
+
+"^A^ man ^falls^ ^down^ a ^flight^ ^of^ ^stairs^ and ^somebody^ ^rushes^
+^over^ to him and ^asks^, ^Did^ you ^miss^ a ^step^? ^No^, ^he^ ^answers^,
+^I^ ^hit^ ^every^ ^one^ ^of^ ^them^!!!"
+
+"^They^ have ^finally^ come ^up^ with ^the^ ^perfect^ ^office^ ^computer^.
+^If^ it ^makes^ a ^mistake^, it ^blames^ ^another^ ^computer^."
+***THE END***
+
+***HANDLING THE MISSPELLED WORDS***
+
+Misspelled Dictionary Before has 55 entries:
+The size of hash table is: 211
+0     null
+1     null
+2     null
+3      KEY: them  VALUE: 1
+4     null
+5     null
+6     null
+7     null
+8     null
+9     null
+10    null
+11    null
+12    null
+13    null
+14     KEY: perfect  VALUE: 1
+15     KEY: they  VALUE: 1
+16     KEY: milton  VALUE: 1
+17     KEY: stairs  VALUE: 1
+18     KEY: the  VALUE: 1
+19    null
+20    null
+21    null
+22    null
+23    null
+24     KEY: thomas  VALUE: 1
+25     KEY: falls  VALUE: 1
+26    null
+27     KEY: edison  VALUE: 1
+28    null
+29    null
+30    null
+31    null
+32    null
+33    null
+34    null
+35    null
+36    null
+37    null
+38    null
+39    null
+40     KEY: one  VALUE: 1
+41    null
+42    null
+43    null
+44    null
+45     KEY: finally  VALUE: 1
+46    null
+47    null
+48    null
+49    null
+50    null
+51    null
+52    null
+53     KEY: every  VALUE: 1
+54    null
+55    null
+56    null
+57     KEY: knock  VALUE: 1
+58    null
+59    null
+60    null
+61    null
+62    null
+63    null
+64    null
+65    null
+66     KEY: blames  VALUE: 1
+67    null
+68    null
+69     KEY: miss  VALUE: 1
+70    null
+71    null
+72    null
+73    null
+74     KEY: far  VALUE: 1
+75     KEY: did  VALUE: 1
+76    null
+77    null
+78    null
+79    null
+80     KEY: recognized  VALUE: 1
+81    null
+82    null
+83    null
+84    null
+85    null
+86    null
+87     KEY: computer  VALUE: 2
+88    null
+89     KEY: asks  VALUE: 1
+90     KEY: i'd  VALUE: 2
+91    null
+92    null
+93     KEY: quotes  VALUE: 1
+94    null
+95    null
+96    null
+97     KEY: a  VALUE: 2
+98    null
+99    null
+100   null
+101   null
+102   null
+103   null
+104    KEY: step  VALUE: 1
+105    KEY: i  VALUE: 4
+106   null
+107   null
+108    KEY: live  VALUE: 2
+109    KEY: down  VALUE: 1
+110   null
+111   null
+112   null
+113   null
+114   null
+115   null
+116   null
+117    KEY: candlelight  VALUE: 1
+118   null
+119    KEY: evolution  VALUE: 1
+120   null
+121   null
+122   null
+123    KEY: laugh  VALUE: 2
+124   null
+125   null
+126   null
+127   null
+128   null
+129   null
+130   null
+131   null
+132   null
+133    KEY: this  VALUE: 1
+134    KEY: berle  VALUE: 1
+135    KEY: another  VALUE: 1
+136    KEY: hit  VALUE: 1
+137   null
+138   null
+139   null
+140   null
+141    KEY: flight  VALUE: 1
+142    KEY: makes  VALUE: 1
+143   null
+144    KEY: laughter  VALUE: 1
+145    KEY: no  VALUE: 1
+146   null
+147    KEY: mistake  VALUE: 1
+148   null
+149   null
+150   null
+151   null
+152    KEY: up  VALUE: 1
+153    KEY: rushes  VALUE: 1
+154   null
+155   null
+156   null
+157   null
+158   null
+159    KEY: spelling  VALUE: 1
+160    KEY: he  VALUE: 1
+161    KEY: somebody  VALUE: 1
+162    KEY: office  VALUE: 1
+163   null
+164   null
+165   null
+166   null
+167    KEY: of  VALUE: 2
+168   null
+169   null
+170   null
+171   null
+172   null
+173   null
+174   null
+175   null
+176   null
+177   null
+178   null
+179   null
+180    KEY: over  VALUE: 1
+181   null
+182   null
+183   null
+184   null
+185    KEY: congress  VALUE: 1
+186   null
+187   null
+188   null
+189   null
+190   null
+191   null
+192    KEY: if  VALUE: 3
+193   null
+194   null
+195   null
+196   null
+197   null
+198   null
+199    KEY: been  VALUE: 4
+200   null
+201   null
+202    KEY: you  VALUE: 1
+203    KEY: we  VALUE: 1
+204    KEY: keeps  VALUE: 1
+205    KEY: answers  VALUE: 1
+206    KEY: it  VALUE: 1
+207   null
+208   null
+209   null
+210   null
+
+***Looking for words to be added to the main dictionary***
+them 1 ---> leaving
+perfect 1 ---> leaving
+they 1 ---> leaving
+milton 1 ---> leaving
+stairs 1 ---> leaving
+the 1 ---> leaving
+thomas 1 ---> leaving
+falls 1 ---> leaving
+edison 1 ---> leaving
+one 1 ---> leaving
+finally 1 ---> leaving
+every 1 ---> leaving
+knock 1 ---> leaving
+blames 1 ---> leaving
+miss 1 ---> leaving
+far 1 ---> leaving
+did 1 ---> leaving
+recognized 1 ---> leaving
+computer 2 ---> moving to the main dictionary
+asks 1 ---> leaving
+i'd 2 ---> moving to the main dictionary
+quotes 1 ---> leaving
+a 2 ---> moving to the main dictionary
+step 1 ---> leaving
+i 4 ---> moving to the main dictionary
+live 2 ---> moving to the main dictionary
+down 1 ---> leaving
+candlelight 1 ---> leaving
+evolution 1 ---> leaving
+laugh 2 ---> moving to the main dictionary
+this 1 ---> leaving
+berle 1 ---> leaving
+another 1 ---> leaving
+hit 1 ---> leaving
+flight 1 ---> leaving
+makes 1 ---> leaving
+laughter 1 ---> leaving
+no 1 ---> leaving
+mistake 1 ---> leaving
+up 1 ---> leaving
+rushes 1 ---> leaving
+spelling 1 ---> leaving
+he 1 ---> leaving
+somebody 1 ---> leaving
+office 1 ---> leaving
+of 2 ---> moving to the main dictionary
+over 1 ---> leaving
+congress 1 ---> leaving
+if 3 ---> moving to the main dictionary
+been 4 ---> moving to the main dictionary
+you 1 ---> leaving
+we 1 ---> leaving
+keeps 1 ---> leaving
+answers 1 ---> leaving
+it 1 ---> leaving
+
+Misspelled Dictionary After has 46 entries:
+The size of hash table is: 211
+0     null
+1     null
+2     null
+3      KEY: them  VALUE: 1
+4     null
+5     null
+6     null
+7     null
+8     null
+9     null
+10    null
+11    null
+12    null
+13    null
+14     KEY: perfect  VALUE: 1
+15     KEY: they  VALUE: 1
+16     KEY: milton  VALUE: 1
+17     KEY: stairs  VALUE: 1
+18     KEY: the  VALUE: 1
+19    null
+20    null
+21    null
+22    null
+23    null
+24     KEY: thomas  VALUE: 1
+25     KEY: falls  VALUE: 1
+26    null
+27     KEY: edison  VALUE: 1
+28    null
+29    null
+30    null
+31    null
+32    null
+33    null
+34    null
+35    null
+36    null
+37    null
+38    null
+39    null
+40     KEY: one  VALUE: 1
+41    null
+42    null
+43    null
+44    null
+45     KEY: finally  VALUE: 1
+46    null
+47    null
+48    null
+49    null
+50    null
+51    null
+52    null
+53     KEY: every  VALUE: 1
+54    null
+55    null
+56    null
+57     KEY: knock  VALUE: 1
+58    null
+59    null
+60    null
+61    null
+62    null
+63    null
+64    null
+65    null
+66     KEY: blames  VALUE: 1
+67    null
+68    null
+69     KEY: miss  VALUE: 1
+70    null
+71    null
+72    null
+73    null
+74     KEY: far  VALUE: 1
+75     KEY: did  VALUE: 1
+76    null
+77    null
+78    null
+79    null
+80     KEY: recognized  VALUE: 1
+81    null
+82    null
+83    null
+84    null
+85    null
+86    null
+87     notIn
+88    null
+89     KEY: asks  VALUE: 1
+90     notIn
+91    null
+92    null
+93     KEY: quotes  VALUE: 1
+94    null
+95    null
+96    null
+97     notIn
+98    null
+99    null
+100   null
+101   null
+102   null
+103   null
+104    KEY: step  VALUE: 1
+105    notIn
+106   null
+107   null
+108    notIn
+109    KEY: down  VALUE: 1
+110   null
+111   null
+112   null
+113   null
+114   null
+115   null
+116   null
+117    KEY: candlelight  VALUE: 1
+118   null
+119    KEY: evolution  VALUE: 1
+120   null
+121   null
+122   null
+123    notIn
+124   null
+125   null
+126   null
+127   null
+128   null
+129   null
+130   null
+131   null
+132   null
+133    KEY: this  VALUE: 1
+134    KEY: berle  VALUE: 1
+135    KEY: another  VALUE: 1
+136    KEY: hit  VALUE: 1
+137   null
+138   null
+139   null
+140   null
+141    KEY: flight  VALUE: 1
+142    KEY: makes  VALUE: 1
+143   null
+144    KEY: laughter  VALUE: 1
+145    KEY: no  VALUE: 1
+146   null
+147    KEY: mistake  VALUE: 1
+148   null
+149   null
+150   null
+151   null
+152    KEY: up  VALUE: 1
+153    KEY: rushes  VALUE: 1
+154   null
+155   null
+156   null
+157   null
+158   null
+159    KEY: spelling  VALUE: 1
+160    KEY: he  VALUE: 1
+161    KEY: somebody  VALUE: 1
+162    KEY: office  VALUE: 1
+163   null
+164   null
+165   null
+166   null
+167    notIn
+168   null
+169   null
+170   null
+171   null
+172   null
+173   null
+174   null
+175   null
+176   null
+177   null
+178   null
+179   null
+180    KEY: over  VALUE: 1
+181   null
+182   null
+183   null
+184   null
+185    KEY: congress  VALUE: 1
+186   null
+187   null
+188   null
+189   null
+190   null
+191   null
+192    notIn
+193   null
+194   null
+195   null
+196   null
+197   null
+198   null
+199    notIn
+200   null
+201   null
+202    KEY: you  VALUE: 1
+203    KEY: we  VALUE: 1
+204    KEY: keeps  VALUE: 1
+205    KEY: answers  VALUE: 1
+206    KEY: it  VALUE: 1
+207   null
+208   null
+209   null
+210   null
+
+Number of probes in main Dictionary 206
+Number of probes in main MisspelledDictionary 58
+
+Process finished with exit code 0
+
+
+
+
+
+
+=== PART 2 WITH SAMPLEDICTIONARY.TXT WITH HASHTABLE START SIZE OF 101 ===
+
+***THE MAIN DICTIONARY***
+The size of hash table is: 211
+0      KEY: have  VALUE: have
+1      KEY: checked  VALUE: checked
+2     null
+3      KEY: are  VALUE: are
+4      KEY: instant  VALUE: instant
+5     null
+6      KEY: watching  VALUE: watching
+7     null
+8     null
+9     null
+10     KEY: vacation  VALUE: vacation
+11    null
+12     KEY: is  VALUE: is
+13     KEY: could  VALUE: could
+14    null
+15    null
+16     KEY: reaching  VALUE: reaching
+17     KEY: but  VALUE: but
+18     KEY: should  VALUE: should
+19    null
+20    null
+21    null
+22    null
+23    null
+24    null
+25    null
+26    null
+27    null
+28    null
+29    null
+30    null
+31    null
+32    null
+33    null
+34    null
+35    null
+36    null
+37     KEY: text  VALUE: text
+38    null
+39    null
+40     KEY: group  VALUE: group
+41    null
+42    null
+43     KEY: lead  VALUE: lead
+44    null
+45     KEY: man  VALUE: man
+46    null
+47     KEY: minutes  VALUE: minutes
+48    null
+49    null
+50    null
+51    null
+52    null
+53    null
+54    null
+55    null
+56    null
+57    null
+58    null
+59     KEY: our  VALUE: our
+60    null
+61    null
+62    null
+63    null
+64    null
+65    null
+66     KEY: wasn't  VALUE: wasn't
+67     KEY: with  VALUE: with
+68     KEY: opportunity  VALUE: opportunity
+69    null
+70     KEY: build  VALUE: build
+71     KEY: two  VALUE: two
+72     KEY: cannot  VALUE: cannot
+73    null
+74    null
+75     KEY: door  VALUE: door
+76    null
+77    null
+78    null
+79     KEY: rather  VALUE: rather
+80    null
+81    null
+82    null
+83    null
+84     KEY: hours  VALUE: hours
+85     KEY: never  VALUE: never
+86     KEY: for  VALUE: for
+87    null
+88     KEY: might  VALUE: might
+89     KEY: and  VALUE: and
+90     KEY: i'd  VALUE: i'd
+91     KEY: than  VALUE: than
+92    null
+93     KEY: quotes  VALUE: quotes
+94    null
+95    null
+96    null
+97     KEY: a  VALUE: a
+98     KEY: has  VALUE: has
+99    null
+100   null
+101    KEY: only  VALUE: only
+102   null
+103   null
+104   null
+105    KEY: i  VALUE: i
+106   null
+107   null
+108    KEY: owe  VALUE: owe
+109   null
+110   null
+111   null
+112   null
+113    KEY: can't  VALUE: can't
+114    KEY: how  VALUE: how
+115   null
+116   null
+117   null
+118    KEY: really  VALUE: really
+119   null
+120    KEY: to  VALUE: to
+121    KEY: committee  VALUE: committee
+122   null
+123   null
+124   null
+125   null
+126   null
+127    KEY: checker  VALUE: checker
+128   null
+129    KEY: him  VALUE: him
+130   null
+131    KEY: that  VALUE: that
+132   null
+133    KEY: this  VALUE: this
+134   null
+135   null
+136    KEY: simple  VALUE: simple
+137    KEY: make  VALUE: make
+138   null
+139   null
+140   null
+141    KEY: can  VALUE: can
+142   null
+143   null
+144    KEY: because  VALUE: because
+145    KEY: think  VALUE: think
+146    KEY: mothers  VALUE: mothers
+147    KEY: very  VALUE: very
+148   null
+149    KEY: television  VALUE: television
+150   null
+151   null
+152   null
+153   null
+154   null
+155   null
+156   null
+157    KEY: lot  VALUE: lot
+158   null
+159   null
+160   null
+161   null
+162    KEY: we'd  VALUE: we'd
+163    KEY: an  VALUE: an
+164   null
+165    KEY: was  VALUE: was
+166   null
+167    KEY: who  VALUE: who
+168   null
+169   null
+170    KEY: hands  VALUE: hands
+171    KEY: come  VALUE: come
+172   null
+173   null
+174   null
+175    KEY: words  VALUE: words
+176    KEY: prototype  VALUE: prototype
+177    KEY: doesn't  VALUE: doesn't
+178    KEY: some  VALUE: some
+179   null
+180    KEY: not  VALUE: not
+181    KEY: works  VALUE: works
+182   null
+183   null
+184   null
+185    KEY: be  VALUE: be
+186   null
+187    KEY: loses  VALUE: loses
+188   null
+189   null
+190   null
+191    KEY: file  VALUE: file
+192    KEY: if  VALUE: if
+193    KEY: star  VALUE: star
+194   null
+195   null
+196    KEY: maybe  VALUE: maybe
+197   null
+198    KEY: once  VALUE: once
+199   null
+200   null
+201   null
+202    KEY: you  VALUE: you
+203    KEY: we  VALUE: we
+204   null
+205    KEY: by  VALUE: by
+206    KEY: it  VALUE: it
+207   null
+208   null
+209   null
+210   null
+
+***END OF THE MAIN DICTIONARY***
+
+***THE SpellChecker RESULTS***
+
+^This^ is a very simple file with some text to be checked
+by our prototype ^spelling^ checker.
+
+^It^ has some words that should not be ^recognized^.
+
+(^Milton^ ^Berle^ ^Quotes^)
+
+"^I'd^ rather be a "could be" if ^I^ cannot be an are;
+because a "could be" is a maybe who is reaching for a star.
+^I'd^ rather be a "has ^been^" than a "might have ^been^", by ^far^;
+for a "might have ^been^" has never ^been^, but a has was once an are."
+
+"^A^ committee is a group that ^keeps^ minutes and loses hours."
+
+"^If^ ^evolution^ really works, how come mothers only have two hands?"
+
+"^If^ opportunity doesn't ^knock^, build a door."
+
+"^Laughter^ is an instant vacation."
+
+"^I^ ^live^ to ^laugh^, and ^I^ ^laugh^ to ^live^."
+
+"^We^ owe a lot to ^Thomas^ ^Edison^ - if it wasn't for him,
+we'd be watching television by ^candlelight^."
+
+"^You^ can lead a man to ^Congress^, but you can't make him think."
+
+"^A^ man ^falls^ ^down^ a ^flight^ ^of^ ^stairs^ and ^somebody^ ^rushes^
+^over^ to him and ^asks^, ^Did^ you ^miss^ a ^step^? ^No^, ^he^ ^answers^,
+^I^ ^hit^ ^every^ ^one^ ^of^ ^them^!!!"
+
+"^They^ have ^finally^ come ^up^ with ^the^ ^perfect^ ^office^ ^computer^.
+^If^ it ^makes^ a ^mistake^, it ^blames^ ^another^ ^computer^."
+***THE END***
+
+***HANDLING THE MISSPELLED WORDS***
+
+Misspelled Dictionary Before has 55 entries:
+The size of hash table is: 211
+0      KEY: somebody  VALUE: 1
+1     null
+2     null
+3      KEY: them  VALUE: 1
+4     null
+5     null
+6     null
+7      KEY: answers  VALUE: 1
+8     null
+9     null
+10    null
+11    null
+12    null
+13    null
+14     KEY: perfect  VALUE: 1
+15     KEY: they  VALUE: 1
+16     KEY: milton  VALUE: 1
+17     KEY: stairs  VALUE: 1
+18    null
+19    null
+20    null
+21    null
+22    null
+23    null
+24     KEY: thomas  VALUE: 1
+25     KEY: falls  VALUE: 1
+26    null
+27     KEY: edison  VALUE: 1
+28    null
+29    null
+30    null
+31    null
+32    null
+33    null
+34    null
+35    null
+36    null
+37    null
+38    null
+39    null
+40     KEY: one  VALUE: 1
+41    null
+42    null
+43    null
+44    null
+45     KEY: finally  VALUE: 1
+46    null
+47    null
+48    null
+49    null
+50    null
+51    null
+52    null
+53     KEY: every  VALUE: 1
+54    null
+55    null
+56    null
+57     KEY: knock  VALUE: 1
+58    null
+59    null
+60    null
+61    null
+62    null
+63    null
+64    null
+65    null
+66     KEY: blames  VALUE: 1
+67    null
+68    null
+69     KEY: miss  VALUE: 1
+70    null
+71    null
+72    null
+73    null
+74     KEY: far  VALUE: 1
+75    null
+76    null
+77    null
+78     KEY: berle  VALUE: 1
+79    null
+80     KEY: recognized  VALUE: 1
+81    null
+82    null
+83    null
+84    null
+85    null
+86    null
+87     KEY: computer  VALUE: 2
+88    null
+89     KEY: asks  VALUE: 1
+90     KEY: i'd  VALUE: 2
+91    null
+92    null
+93     KEY: quotes  VALUE: 1
+94    null
+95    null
+96    null
+97     KEY: a  VALUE: 2
+98    null
+99    null
+100   null
+101   null
+102   null
+103    KEY: down  VALUE: 1
+104    KEY: step  VALUE: 1
+105    KEY: i  VALUE: 4
+106   null
+107   null
+108    KEY: live  VALUE: 2
+109   null
+110   null
+111   null
+112   null
+113   null
+114   null
+115   null
+116   null
+117    KEY: candlelight  VALUE: 1
+118   null
+119    KEY: evolution  VALUE: 1
+120   null
+121   null
+122   null
+123    KEY: laugh  VALUE: 2
+124   null
+125   null
+126   null
+127   null
+128   null
+129   null
+130   null
+131   null
+132   null
+133    KEY: this  VALUE: 1
+134   null
+135    KEY: another  VALUE: 1
+136    KEY: hit  VALUE: 1
+137    KEY: did  VALUE: 1
+138   null
+139   null
+140   null
+141    KEY: flight  VALUE: 1
+142    KEY: makes  VALUE: 1
+143   null
+144    KEY: laughter  VALUE: 1
+145    KEY: no  VALUE: 1
+146   null
+147    KEY: mistake  VALUE: 1
+148   null
+149   null
+150   null
+151   null
+152    KEY: up  VALUE: 1
+153    KEY: rushes  VALUE: 1
+154   null
+155   null
+156   null
+157   null
+158   null
+159    KEY: spelling  VALUE: 1
+160    KEY: he  VALUE: 1
+161    KEY: office  VALUE: 1
+162   null
+163   null
+164   null
+165   null
+166   null
+167    KEY: of  VALUE: 2
+168   null
+169   null
+170   null
+171   null
+172   null
+173   null
+174   null
+175   null
+176   null
+177   null
+178   null
+179   null
+180    KEY: over  VALUE: 1
+181   null
+182   null
+183   null
+184   null
+185    KEY: congress  VALUE: 1
+186   null
+187   null
+188   null
+189   null
+190   null
+191   null
+192    KEY: if  VALUE: 3
+193   null
+194    KEY: the  VALUE: 1
+195   null
+196   null
+197   null
+198   null
+199    KEY: been  VALUE: 4
+200   null
+201   null
+202    KEY: you  VALUE: 1
+203    KEY: we  VALUE: 1
+204    KEY: keeps  VALUE: 1
+205   null
+206    KEY: it  VALUE: 1
+207   null
+208   null
+209   null
+210   null
+
+***Looking for words to be added to the main dictionary***
+somebody 1 ---> leaving
+them 1 ---> leaving
+answers 1 ---> leaving
+perfect 1 ---> leaving
+they 1 ---> leaving
+milton 1 ---> leaving
+stairs 1 ---> leaving
+thomas 1 ---> leaving
+falls 1 ---> leaving
+edison 1 ---> leaving
+one 1 ---> leaving
+finally 1 ---> leaving
+every 1 ---> leaving
+knock 1 ---> leaving
+blames 1 ---> leaving
+miss 1 ---> leaving
+far 1 ---> leaving
+berle 1 ---> leaving
+recognized 1 ---> leaving
+computer 2 ---> moving to the main dictionary
+asks 1 ---> leaving
+i'd 2 ---> moving to the main dictionary
+quotes 1 ---> leaving
+a 2 ---> moving to the main dictionary
+down 1 ---> leaving
+step 1 ---> leaving
+i 4 ---> moving to the main dictionary
+live 2 ---> moving to the main dictionary
+candlelight 1 ---> leaving
+evolution 1 ---> leaving
+laugh 2 ---> moving to the main dictionary
+this 1 ---> leaving
+another 1 ---> leaving
+hit 1 ---> leaving
+did 1 ---> leaving
+flight 1 ---> leaving
+makes 1 ---> leaving
+laughter 1 ---> leaving
+no 1 ---> leaving
+mistake 1 ---> leaving
+up 1 ---> leaving
+rushes 1 ---> leaving
+spelling 1 ---> leaving
+he 1 ---> leaving
+office 1 ---> leaving
+of 2 ---> moving to the main dictionary
+over 1 ---> leaving
+congress 1 ---> leaving
+if 3 ---> moving to the main dictionary
+the 1 ---> leaving
+been 4 ---> moving to the main dictionary
+you 1 ---> leaving
+we 1 ---> leaving
+keeps 1 ---> leaving
+it 1 ---> leaving
+
+Misspelled Dictionary After has 46 entries:
+The size of hash table is: 211
+0      KEY: somebody  VALUE: 1
+1     null
+2     null
+3      KEY: them  VALUE: 1
+4     null
+5     null
+6     null
+7      KEY: answers  VALUE: 1
+8     null
+9     null
+10    null
+11    null
+12    null
+13    null
+14     KEY: perfect  VALUE: 1
+15     KEY: they  VALUE: 1
+16     KEY: milton  VALUE: 1
+17     KEY: stairs  VALUE: 1
+18    null
+19    null
+20    null
+21    null
+22    null
+23    null
+24     KEY: thomas  VALUE: 1
+25     KEY: falls  VALUE: 1
+26    null
+27     KEY: edison  VALUE: 1
+28    null
+29    null
+30    null
+31    null
+32    null
+33    null
+34    null
+35    null
+36    null
+37    null
+38    null
+39    null
+40     KEY: one  VALUE: 1
+41    null
+42    null
+43    null
+44    null
+45     KEY: finally  VALUE: 1
+46    null
+47    null
+48    null
+49    null
+50    null
+51    null
+52    null
+53     KEY: every  VALUE: 1
+54    null
+55    null
+56    null
+57     KEY: knock  VALUE: 1
+58    null
+59    null
+60    null
+61    null
+62    null
+63    null
+64    null
+65    null
+66     KEY: blames  VALUE: 1
+67    null
+68    null
+69     KEY: miss  VALUE: 1
+70    null
+71    null
+72    null
+73    null
+74     KEY: far  VALUE: 1
+75    null
+76    null
+77    null
+78     KEY: berle  VALUE: 1
+79    null
+80     KEY: recognized  VALUE: 1
+81    null
+82    null
+83    null
+84    null
+85    null
+86    null
+87     notIn
+88    null
+89     KEY: asks  VALUE: 1
+90     notIn
+91    null
+92    null
+93     KEY: quotes  VALUE: 1
+94    null
+95    null
+96    null
+97     notIn
+98    null
+99    null
+100   null
+101   null
+102   null
+103    KEY: down  VALUE: 1
+104    KEY: step  VALUE: 1
+105    notIn
+106   null
+107   null
+108    notIn
+109   null
+110   null
+111   null
+112   null
+113   null
+114   null
+115   null
+116   null
+117    KEY: candlelight  VALUE: 1
+118   null
+119    KEY: evolution  VALUE: 1
+120   null
+121   null
+122   null
+123    notIn
+124   null
+125   null
+126   null
+127   null
+128   null
+129   null
+130   null
+131   null
+132   null
+133    KEY: this  VALUE: 1
+134   null
+135    KEY: another  VALUE: 1
+136    KEY: hit  VALUE: 1
+137    KEY: did  VALUE: 1
+138   null
+139   null
+140   null
+141    KEY: flight  VALUE: 1
+142    KEY: makes  VALUE: 1
+143   null
+144    KEY: laughter  VALUE: 1
+145    KEY: no  VALUE: 1
+146   null
+147    KEY: mistake  VALUE: 1
+148   null
+149   null
+150   null
+151   null
+152    KEY: up  VALUE: 1
+153    KEY: rushes  VALUE: 1
+154   null
+155   null
+156   null
+157   null
+158   null
+159    KEY: spelling  VALUE: 1
+160    KEY: he  VALUE: 1
+161    KEY: office  VALUE: 1
+162   null
+163   null
+164   null
+165   null
+166   null
+167    notIn
+168   null
+169   null
+170   null
+171   null
+172   null
+173   null
+174   null
+175   null
+176   null
+177   null
+178   null
+179   null
+180    KEY: over  VALUE: 1
+181   null
+182   null
+183   null
+184   null
+185    KEY: congress  VALUE: 1
+186   null
+187   null
+188   null
+189   null
+190   null
+191   null
+192    notIn
+193   null
+194    KEY: the  VALUE: 1
+195   null
+196   null
+197   null
+198   null
+199    notIn
+200   null
+201   null
+202    KEY: you  VALUE: 1
+203    KEY: we  VALUE: 1
+204    KEY: keeps  VALUE: 1
+205   null
+206    KEY: it  VALUE: 1
+207   null
+208   null
+209   null
+210   null
+
+Number of probes in main Dictionary 179
+Number of probes in main MisspelledDictionary 87
+
+Process finished with exit code 0

@@ -1,0 +1,131 @@
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+a
+I guess that you chose A; am I right? (Y/N) > y
+ScoreBoard: 1 correct. 0 incorrect.
+The size of hash table is: 5
+0     null
+1     null
+2      KEY: 1234  VALUE: A = 1, B = 0
+3     null
+4     null
+
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+a
+I guess that you chose A; am I right? (Y/N) > y
+ScoreBoard: 2 correct. 0 incorrect.
+The size of hash table is: 5
+0     null
+1     null
+2      KEY: 1234  VALUE: A = 1, B = 0
+3      KEY: 234A  VALUE: A = 1, B = 0
+4     null
+
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+a
+I guess that you chose A; am I right? (Y/N) > y
+ScoreBoard: 3 correct. 0 incorrect.
+The size of hash table is: 11
+0      KEY: 1234  VALUE: A = 1, B = 0
+1     null
+2     null
+3     null
+4     null
+5     null
+6     null
+7      KEY: 234A  VALUE: A = 1, B = 0
+8     null
+9     null
+10     KEY: 34AA  VALUE: A = 1, B = 0
+
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+a
+I guess that you chose A; am I right? (Y/N) > y
+ScoreBoard: 4 correct. 0 incorrect.
+The size of hash table is: 11
+0      KEY: 1234  VALUE: A = 1, B = 0
+1      KEY: 4AAA  VALUE: A = 1, B = 0
+2     null
+3     null
+4     null
+5     null
+6     null
+7      KEY: 234A  VALUE: A = 1, B = 0
+8     null
+9     null
+10     KEY: 34AA  VALUE: A = 1, B = 0
+
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+a
+I guess that you chose A; am I right? (Y/N) > y
+ScoreBoard: 5 correct. 0 incorrect.
+The size of hash table is: 11
+0      KEY: 1234  VALUE: A = 1, B = 0
+1      KEY: 4AAA  VALUE: A = 1, B = 0
+2     null
+3     null
+4     null
+5      KEY: AAAA  VALUE: A = 1, B = 0
+6     null
+7      KEY: 234A  VALUE: A = 1, B = 0
+8     null
+9     null
+10     KEY: 34AA  VALUE: A = 1, B = 0
+
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+a
+I guess that you chose A; am I right? (Y/N) > y
+ScoreBoard: 6 correct. 0 incorrect.
+--> updating the hash table for key: AAAA value: A = 2, B = 0
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+a
+I guess that you chose A; am I right? (Y/N) > y
+ScoreBoard: 7 correct. 0 incorrect.
+--> updating the hash table for key: AAAA value: A = 3, B = 0
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+b
+I guess that you chose A; am I right? (Y/N) > n
+ScoreBoard: 7 correct. 1 incorrect.
+--> updating the hash table for key: AAAA value: A = 3, B = 1
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+b
+I guess that you chose A; am I right? (Y/N) > n
+ScoreBoard: 7 correct. 2 incorrect.
+The size of hash table is: 23
+0     null
+1     null
+2     null
+3     null
+4     null
+5     null
+6      KEY: AAAA  VALUE: A = 3, B = 1
+7      KEY: AAAB  VALUE: A = 0, B = 1
+8     null
+9     null
+10     KEY: 34AA  VALUE: A = 1, B = 0
+11    null
+12    null
+13    null
+14    null
+15    null
+16    null
+17    null
+18    null
+19    null
+20     KEY: 4AAA  VALUE: A = 1, B = 0
+21     KEY: 1234  VALUE: A = 1, B = 0
+22     KEY: 234A  VALUE: A = 1, B = 0
+
+
+Think of either A or B, and I will guess your choice. Type QUIT to exit. 
+quit
+Bye!
+
+Process finished with exit code 0

@@ -1,0 +1,33 @@
+This is a very simple file with some text to be checked
+by our prototype spelling checker.
+
+It has some words that should not be recognized.
+
+(Milton Berle Quotes)
+
+"I'd rather be a "could be" if I cannot be an are;
+because a "could be" is a maybe who is reaching for a star.
+I'd rather be a "has been" than a "might have been", by far;
+for a "might have been" has never been, but a has was once an are."
+
+"A committee is a group that keeps minutes and loses hours."
+
+"If evolution really works, how come mothers only have two hands?"
+
+"If opportunity doesn't knock, build a door."
+
+"Laughter is an instant vacation."
+
+"I live to laugh, and I laugh to live."
+
+"We owe a lot to Thomas Edison - if it wasn't for him,
+we'd be watching television by candlelight."
+
+"You can lead a man to Congress, but you can't make him think."
+
+"A man falls down a flight of stairs and somebody rushes
+over to him and asks, Did you miss a step? No, he answers,
+I hit every one of them!!!"
+
+"They have finally come up with the perfect office computer.
+If it makes a mistake, it blames another computer."

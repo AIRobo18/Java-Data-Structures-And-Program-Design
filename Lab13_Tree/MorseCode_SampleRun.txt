@@ -1,0 +1,53 @@
+The Morse Code:
+===============
+e .
+t _
+i ..
+a ._
+n _.
+m __
+s ...
+u .._
+r ._.
+w .__
+d _..
+k _._
+g __.
+o ___
+h ....
+v ..._
+f .._.
+l ._..
+p .__.
+j .___
+b _...
+x _.._
+c _._.
+y _.__
+z __..
+q __._
+
+The Morse Code Tree in the level order:
+  e t i a n m s u r w d k g o h v f l p j b x c y z q 
+
+
+Please enter a message in Morse Code, use space as a seperator.
+... ___ ...
+Decoding "... ___ ..."
+The decoded string is "sos"
+Would you like to decode another message? (yes/no)
+yes
+Please enter a message in Morse Code, use space as a seperator.
+_._. ... .._ _._. ..
+Decoding "_._. ... .._ _._. .."
+The decoded string is "csuci"
+Would you like to decode another message? (yes/no)
+yes
+Please enter a message in Morse Code, use space as a seperator.
+._._
+Decoding "._._"
+Not a Morse pattern.
+Would you like to decode another message? (yes/no)
+no
+
+Process finished with exit code 0
