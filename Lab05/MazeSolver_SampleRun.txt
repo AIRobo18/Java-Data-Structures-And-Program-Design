@@ -1,0 +1,81 @@
+===SAMPLE RUN #1===
+        *** SEARCH THE MAZE ***
+      [ 0] [ 1] [ 2] [ 3] [ 4] [ 5] 
+[ 0]    .    #    #    #    #    #
+[ 1]    .    .    .    .    .    #
+[ 2]    #    .    #    #    #    #
+[ 3]    #    .    #    .    #    #
+[ 4]    .    .    .    #    .    .
+[ 5]    #    #    .    .    .    #
+Enter the GOAL row
+5
+Enter the GOAL column
+4
+Enter the START row
+0
+Enter the START column
+0
+[ 0] [ 1] [ 2] [ 3] [ 4] [ 5] 
+[ 0]    S    #    #    #    #    #
+[ 1]    .    .    .    .    .    #
+[ 2]    #    .    #    #    #    #
+[ 3]    #    .    #    .    #    #
+[ 4]    .    .    .    #    .    .
+[ 5]    #    #    .    .    G    #
+
+---> The GOAL [5,4] was found!
+
+The search results:
+[ 0] [ 1] [ 2] [ 3] [ 4] [ 5] 
+[ 0]    S    #    #    #    #    #
+[ 1]    +    +    .    .    .    #
+[ 2]    #    +    #    #    #    #
+[ 3]    #    +    #    .    #    #
+[ 4]    .    +    +    #    .    .
+[ 5]    #    #    +    +    G    #
+
+Process finished with exit code 0
+
+
+
+
+
+
+
+===SAMPLE RUN #2===
+        *** SEARCH THE MAZE ***
+      [ 0] [ 1] [ 2] [ 3] [ 4] [ 5] 
+[ 0]    .    #    #    #    #    #
+[ 1]    .    .    .    .    .    #
+[ 2]    #    .    #    #    #    #
+[ 3]    #    .    #    .    #    #
+[ 4]    .    .    .    #    .    .
+[ 5]    #    #    .    .    .    #
+Enter the GOAL row
+3
+Enter the GOAL column
+3
+Enter the START row
+1
+Enter the START column
+2
+[ 0] [ 1] [ 2] [ 3] [ 4] [ 5] 
+[ 0]    .    #    #    #    #    #
+[ 1]    .    .    S    .    .    #
+[ 2]    #    .    #    #    #    #
+[ 3]    #    .    #    G    #    #
+[ 4]    .    .    .    #    .    .
+[ 5]    #    #    .    .    .    #
+
+---> The GOAL [3,3]  was not reached!
+
+The search results:
+[ 0] [ 1] [ 2] [ 3] [ 4] [ 5] 
+[ 0]    +    #    #    #    #    #
+[ 1]    +    +    S    +    +    #
+[ 2]    #    +    #    #    #    #
+[ 3]    #    +    #    G    #    #
+[ 4]    +    +    +    #    +    +
+[ 5]    #    #    +    +    +    #
+
+Process finished with exit code 0

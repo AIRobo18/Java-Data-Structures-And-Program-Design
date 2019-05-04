@@ -1,0 +1,30 @@
+*** Create a stack ***
+--> Add to stack to get
+Joe Jane Jill Jess Jim
+
+--> Testing peek, peek2, and pop:
+Joe is at the top of the stack.
+Jane is just beneath the top of the stack.
+Joe is removed from the stack.
+
+Jane is at the top of the stack.
+Jill is just beneath the top of the stack.
+Jane is removed from the stack.
+
+Jill is at the top of the stack.
+Jess is just beneath the top of the stack.
+Jill is removed from the stack.
+
+Jess is at the top of the stack.
+Jim is just beneath the top of the stack.
+Jess is removed from the stack.
+
+Jim is at the top of the stack.
+ CORRECT - exception has been thrown: There is only one element in stack
+Jim is removed from the stack.
+
+--> The stack should be empty: 
+isEmpty() returns true
+ CORRECT - exception has been thrown: Stack is empty
+ CORRECT - exception has been thrown: Stack is empty
+*** Done ***

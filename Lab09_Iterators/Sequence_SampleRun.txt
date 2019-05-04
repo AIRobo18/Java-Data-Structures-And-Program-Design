@@ -1,0 +1,44 @@
+The seq1 is [a, b, c]
+==> Please enter a sequence of words on a single line, (words should be separated by spaces), or stop.
+a b c
+Is [a, b, c] a subsequence of [a, b, c]: true
+==> Please enter a sequence of words on a single line, (words should be separated by spaces), or stop.
+b a k e r y
+Is [a, b, c] a subsequence of [b, a, k, e, r, y]: false
+==> Please enter a sequence of words on a single line, (words should be separated by spaces), or stop.
+a b r a c a d a b r a
+Is [a, b, c] a subsequence of [a, b, r, a, c, a, d, a, b, r, a]: true
+==> Please enter a sequence of words on a single line, (words should be separated by spaces), or stop.
+stop
+
+*** RUNNING AUTOMATED TESTCASES ***
+Testing if [a, b, c] is a subsequence of []: 
+     Passes
+Testing if [] is a subsequence of [a, b, c]: 
+     Passes
+Testing if [a, b, c] is a subsequence of [a, c, b]: 
+     Passes
+Testing if [a, c, b] is a subsequence of [a, b, c]: 
+     Passes
+Testing if [a, b, c] is a subsequence of [a, c, b, c]: 
+     Passes
+Testing if [a, c, b, c] is a subsequence of [a, b, c]: 
+     Passes
+Testing if [a, b, c, a, b, c] is a subsequence of [a, c, b, c]: 
+     Passes
+Testing if [a, c, b, c] is a subsequence of [a, b, c, a, b, c]: 
+     Passes
+Testing if [a, b, a, c] is a subsequence of [a, b, a, c]: 
+     Passes
+Testing if [a, b, c] is a subsequence of [a, b, d]: 
+     Passes
+Testing if [a, b, d] is a subsequence of [a, b, c]: 
+     Passes
+Testing if [a, b, c] is a subsequence of [x, y, a]: 
+     Passes
+Testing if [x, y, a] is a subsequence of [a, b, c]: 
+     Passes
+Testing if [a, b, c] is a subsequence of [a, b, a, a, b, c]: 
+     Passes
+Testing if [a, b, a, a, b, c] is a subsequence of [a, b, c]: 
+     Passes

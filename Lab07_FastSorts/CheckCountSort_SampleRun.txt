@@ -1,0 +1,37 @@
+What would you like your array size to be, something greater than or equal to 1.
+21
+What would you like the number of trials to be, something greater than or equal to 1.
+4
+What would you like your largest value to be. something greater than or equal to 1.
+100
+
+TRIALS #1
+The original array is: 
+[69, 19, 89, 13, 32, 95, 88, 79, 24, 89, 76, 21, 68, 5, 16, 75, 5, 44, 30, 26, 58]
+The original array sorted with countingSort is: 
+[5, 5, 13, 16, 19, 21, 24, 26, 30, 32, 44, 58, 68, 69, 75, 76, 79, 88, 89, 89, 95]
+    Passes
+
+TRIALS #2
+The original array is: 
+[73, 87, 48, 59, 60, 13, 73, 33, 47, 23, 94, 9, 13, 0, 20, 69, 43, 34, 80, 80, 58]
+The original array sorted with countingSort is: 
+[0, 9, 13, 13, 20, 23, 33, 34, 43, 47, 48, 58, 59, 60, 69, 73, 73, 80, 80, 87, 94]
+    Passes
+
+TRIALS #3
+The original array is: 
+[57, 62, 32, 77, 21, 43, 97, 5, 43, 19, 46, 37, 15, 75, 20, 59, 21, 34, 3, 30, 86]
+The original array sorted with countingSort is: 
+[3, 5, 15, 19, 20, 21, 21, 30, 32, 34, 37, 43, 43, 46, 57, 59, 62, 75, 77, 86, 97]
+    Passes
+
+TRIALS #4
+The original array is: 
+[7, 22, 84, 81, 24, 65, 49, 62, 50, 82, 56, 60, 98, 69, 11, 22, 40, 68, 23, 64, 42]
+The original array sorted with countingSort is: 
+[7, 11, 22, 22, 23, 24, 40, 42, 49, 50, 56, 60, 62, 64, 65, 68, 69, 81, 82, 84, 98]
+    Passes
+
+
+Process finished with exit code 0

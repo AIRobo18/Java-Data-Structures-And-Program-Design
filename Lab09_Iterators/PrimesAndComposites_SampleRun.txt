@@ -1,0 +1,25 @@
+=== SAMPLE RUN #1 ===
+Enter the maximum value to test for primes
+It should be an integer value greater than or equal to 2.
+10
+
+ ====> Constructing list of candidates up to 10
+The candidates list is [2, 3, 4, 5, 6, 7, 8, 9, 10]
+The primes list is 
+2 3 5 7 
+The composites list is 
+4 6 8 9 10
+
+
+
+=== SAMPLE RUN #2 ===
+Enter the maximum value to test for primes
+It should be an integer value greater than or equal to 2.
+25
+
+ ====> Constructing list of candidates up to 25
+The candidates list is [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+The primes list is 
+2 3 5 7 11 13 17 19 23 
+The composites list is 
+4 6 8 10 12 14 16 18 20 22 24 9 15 21 25 

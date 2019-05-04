@@ -1,0 +1,23 @@
+**************  TESTING THE CIPHER  **************
+
+--->The original message encoded is:
+Fxi(gvyl~^udi|x,^z\$zqmvimqmp(Xrn%mitgyr|r|\v}%mompyzv(Xg~t~p6
+--->The original message decoded is:
+All programmers are playwrights and all computers are lousy actors.
+
+--->The original message encoded is:
+Klowqqj$xt,bt\zky{o(ks*x`k\w}1,Vwl$rfb(ks*ymhmxrj,p|Xm|x:+6
+--->The original message decoded is:
+There is no elevator to success, You have to take the stairs...
+
+--->The original message encoded is:
+nov{njghl$kx#qv{gw
+--->The original message decoded is:
+knowledge is power
+
+--->The original message encoded is:
+ubji"hds
+--->The original message decoded is:
+race car
+
+Process finished with exit code 0

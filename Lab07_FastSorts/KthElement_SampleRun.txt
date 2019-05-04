@@ -1,0 +1,43 @@
+What size array should be used?
+ It should be an integer value greater than or equal to 1.
+21
+How many arrays should be used (number of trials)?
+ It should be an integer value greater than or equal to 1.
+4
+What seed should be used?
+ It should be an integer value greater than or equal to 1.
+90
+
+TRIAL #1
+The original array is: 
+[39, 79, 2, 29, 31, 36, 83, 9, 88, 80, 88, 27, 43, 33, 90, 8, 41, 78, 28, 71, 30]
+The original array sorted would be: 
+[2, 8, 9, 27, 28, 29, 30, 31, 33, 36, 39, 41, 43, 71, 78, 79, 80, 83, 88, 88, 90]
+>>> kthItem found median at index 10 with value of 39 <<<
+    passes
+
+TRIAL #2
+The original array is: 
+[65, 67, 21, 95, 71, 87, 26, 55, 48, 74, 80, 23, 39, 82, 57, 98, 50, 16, 83, 92, 63]
+The original array sorted would be: 
+[16, 21, 23, 26, 39, 48, 50, 55, 57, 63, 65, 67, 71, 74, 80, 82, 83, 87, 92, 95, 98]
+>>> kthItem found median at index 10 with value of 65 <<<
+    passes
+
+TRIAL #3
+The original array is: 
+[93, 59, 66, 72, 10, 39, 89, 37, 51, 40, 34, 1, 13, 79, 90, 44, 91, 7, 60, 88, 79]
+The original array sorted would be: 
+[1, 7, 10, 13, 34, 37, 39, 40, 44, 51, 59, 60, 66, 72, 79, 79, 88, 89, 90, 91, 93]
+>>> kthItem found median at index 10 with value of 59 <<<
+    passes
+
+TRIAL #4
+The original array is: 
+[18, 99, 84, 37, 49, 90, 31, 34, 62, 33, 25, 96, 57, 28, 56, 82, 52, 46, 15, 9, 12]
+The original array sorted would be: 
+[9, 12, 15, 18, 25, 28, 31, 33, 34, 37, 46, 49, 52, 56, 57, 62, 82, 84, 90, 96, 99]
+>>> kthItem found median at index 10 with value of 46 <<<
+    passes
+
+Process finished with exit code 0

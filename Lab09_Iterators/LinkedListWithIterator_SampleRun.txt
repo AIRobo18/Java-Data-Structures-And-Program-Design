@@ -1,0 +1,67 @@
+*** Create a list ***
+List should contain: 15 25 35 45 55 65 75 85 95
+
+Using ADT list operations, the list contains: 
+
+The list contains 9 entries, as follows:
+15 is entry 1
+25 is entry 2
+35 is entry 3
+45 is entry 4
+55 is entry 5
+65 is entry 6
+75 is entry 7
+85 is entry 8
+95 is entry 9
+
+
+Using Iterator methods, the list contains
+15 25 35 45 55 65 75 85 95 
+
+
+*** Calling reverseLinkedListIteratively ***
+
+List should contain: 95 85 75 65 55 45 35 25 15
+
+Using ADT list operations, the list contains 
+
+The list contains 9 entries, as follows:
+95 is entry 1
+85 is entry 2
+75 is entry 3
+65 is entry 4
+55 is entry 5
+45 is entry 6
+35 is entry 7
+25 is entry 8
+15 is entry 9
+
+
+Using Iterator methods, the list contains
+95 85 75 65 55 45 35 25 15 
+===========================================================
+
+
+*** Calling reverseLinkedListRecursively ***
+Inside second if
+
+List should contain: 15 25 35 45 55 65 75 85 95
+
+Using ADT list operations, the list contains 
+
+The list contains 9 entries, as follows:
+15 is entry 1
+25 is entry 2
+35 is entry 3
+45 is entry 4
+55 is entry 5
+65 is entry 6
+75 is entry 7
+85 is entry 8
+95 is entry 9
+
+
+Using Iterator methods, the list contains
+15 25 35 45 55 65 75 85 95 
+
+*** Done ***

@@ -1,0 +1,127 @@
+***Testing display method***
+bag1 is 
+There are 5 element(s): B C A B A 
+bag2 is 
+There are 0 element(s): 
+After removing the first element B from bag1, it contains
+There are 4 element(s): C A B A 
+
+***Testing equals method***
+Are bag1 and bag2 equal? --> NO
+Are bag2 and bag1 equal? --> NO
+bag2:
+There are 5 element(s): X B A C A 
+Are bag1 and bag2 equal? --> NO
+Removed X from bag2.
+There are 4 element(s): B A C A 
+Are bag1 and bag2 equal now? --> NO
+Created bagCopyOfBag1:
+There are 4 element(s): C A B A 
+Are bag1 and bagCopyOfBag1 equal? --> YES
+
+***Testing smallest method***
+bag1: There are 7 element(s): A C A X B A A 
+bag2: There are 7 element(s): D C C A B B A 
+The smallest item in bag1 is: A
+The smallest item in bag2 is: A
+
+***Testing union, removeMax, intersection, difference and subset methods***
+bag1: There are 7 element(s): A C A X B A A 
+bag2: There are 7 element(s): D C C A B B A 
+
+***Testing union method***
+The union of bag1 and bag2 is 
+There are 14 element(s): A B B A C C D A A B X A C A 
+
+***Testing removeMax method***
+Removed the largest element "X" from the union bag; the current content is:
+There are 13 element(s): B B A C C D A A B A A C A 
+Bag is empty
+The bag is empty and removeMax returned null - CORRECT
+
+***Testing intersection method***
+The intersection of bag1 and bag2 is 
+There are 4 element(s): B A C A 
+
+***Testing difference method***
+The difference of bag1 and bag2 is 
+There are 3 element(s): X A A 
+The difference of bag2 and bag1 is 
+There are 3 element(s): B C D 
+
+***Testing subset method***
+Is bag1 a subset of bag1 ? --> YES
+Is bag1 a subset of bag2 ? --> NO
+Bag is empty
+Is an empty bag a subset of bag2 ? --> YES
+Is bag2 a subset of an empty bag ? --> NO
+Created bag3:
+There are 3 element(s): C B A 
+Created bag4:
+There are 3 element(s): A C B 
+Is bag3 a subset of bag4 ? --> YES
+Is bag3 a subset of bag4 after adding "Z" to it ? --> YES
+Is bag4 a subset of bag3 ? --> NO
+Adding  "Z" to bag3 twice
+Bag3 is:
+There are 5 element(s): Z Z C B A 
+Bag4 is:
+There are 4 element(s): Z A C B 
+Is bag3 a subset of bag4 ? --> NO
+
+***Testing replace method***
+Bag1 contains:
+There are 7 element(s): A C A X B A A 
+Replacing an element with "X"
+Now bag1 contains:
+There are 7 element(s): X C A X B A A 
+
+***Testing removeEvery method***
+Bag1 contains:
+There are 7 element(s): X C A X B A A 
+Removing all "Z"
+After removing all "Z" bag1 contains:
+There are 7 element(s): X C A X B A A 
+Removing all "X"
+After removing all "X" bag1 contains:
+There are 5 element(s): C A B A A 
+After adding two "A" bag1 contains:
+There are 7 element(s): A A C A B A A 
+Removing all "A"
+After removing all "A" bag1 contains:
+There are 2 element(s): C B 
+Removing all "B"
+After removing all "B" bag1 contains:
+There are 1 element(s): C 
+
+*** TESTING moveFirstToEnd ***
+Cycling list 1 once
+List before:
+There are 3 element(s): A B C 
+List after:
+There are 3 element(s): B C A 
+
+Cycling list 3 three times
+List before:
+There are 3 element(s): A C B 
+List after:
+There are 3 element(s): A C B 
+
+Cycling list of length 0
+List before:
+There are 0 element(s): 
+The bag is empty
+List after:
+There are 0 element(s): 
+
+Cycling list of length 1
+List before:
+There are 1 element(s): B 
+List after:
+There are 1 element(s): B 
+
+Cycling list of length 2
+List before:
+There are 2 element(s): B A 
+List after:
+There are 2 element(s): A B

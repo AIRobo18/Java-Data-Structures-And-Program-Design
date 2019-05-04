@@ -1,0 +1,58 @@
+*** Create a stack with default constructor ***
+---> isEmpty() returns true
+---> Add to stack to get
+Joe Jane Jill Jess Jim
+---> isEmpty() returns false
+--> Testing peek and pop:
+Joe is at the top of the stack.
+Joe is removed from the stack.
+Jane is at the top of the stack.
+Jane is removed from the stack.
+Jill is at the top of the stack.
+Jill is removed from the stack.
+Jess is at the top of the stack.
+Jess is removed from the stack.
+Jim is at the top of the stack.
+Jim is removed from the stack.
+--> The stack should be empty: 
+isEmpty() returns true
+--> Add to stack to get
+Jim Jess Joe
+
+--> Testing clear:
+--> The stack should be empty: 
+isEmpty() returns true
+defaultStack.peek() returns: 
+ CORRECT - EmptyStackException has been thrown
+defaultStack.pop() returns: 
+ CORRECT - EmptyStackException has been thrown
+
+*** Create a stack with the secondary constructor ***
+--> isEmpty() returns true
+--> Add to stack to get
+Joe Jane Jill Jess Jim
+--> isEmpty() returns false
+-->Testing peek and pop:
+Joe is at the top of the stack.
+Joe is removed from the stack.
+Jane is at the top of the stack.
+Jane is removed from the stack.
+Jill is at the top of the stack.
+Jill is removed from the stack.
+Jess is at the top of the stack.
+Jess is removed from the stack.
+Jim is at the top of the stack.
+Jim is removed from the stack.
+--> The stack should be empty: 
+isEmpty() returns true
+--> Add to stack to get
+Jim Jess Joe
+
+--> Testing clear:
+--> The stack should be empty: 
+isEmpty() returns true
+defaultStack.peek() returns: 
+ CORRECT - EmptyStackException has been thrown
+defaultStack.pop() returns: 
+ CORRECT - EmptyStackException has been thrown
+*** Done ***

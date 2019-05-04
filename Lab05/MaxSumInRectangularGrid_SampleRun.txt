@@ -1,0 +1,16 @@
+Enter the number of rows of the grid (between 1 and 10) > 7
+Enter the number of columns of the grid (between 1 and 20) > 5
+
+4	4	7	21	15	
+15	20	1	14	16	
+11	22	14	14	4	
+6	14	13	21	11	
+15	20	6	22	18	
+9	12	5	16	21	
+5	21	5	11	19	
+
+
+The max sum is 134
+The max path is [0, 3]:21 ==> [1, 4]:16 ==> [2, 3]:14 ==> [3, 3]:21 ==> [4, 3]:22 ==> [5, 4]:21 ==> [6, 4]:19
+
+Process finished with exit code 0

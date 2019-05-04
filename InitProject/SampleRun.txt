@@ -1,0 +1,26 @@
+SAMPLE RUN
+==========
+
+"C:\Program Files\Java\jdk1.8.0_60\bin\java" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.4\bin" -Dfile.encoding=windows-1252 -classpath "C:\Program Files\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_60\jre\lib\ext\zipfs.jar;C:\Users\Robert\Documents\University\IDEA_Comp150\InitProject\out\production\InitProject;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 14.1.4\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain CombinationLockClient
+Enter 3 positive integers separated by spaces representing the combination lock (i.e. 8 13 14)
+1 2 3
+The currnet values of the combination locks are: The current value is: 0.
+The current turn is: 0. The current value is: 0.
+The current turn is: 0. The current value is: 0.
+The current turn is: 0.
+The secret values are: The secret value is: 1.
+The secret turn is: 1. Combination@45ee12a7 The secret value is: 3.
+The secret turn is: 3.
+Enter tick values to open the lock (i.e. 9 right 1 left 23 right)
+1 right 2 left 3 right
+The currnet values of the combination locks are: The current value is: 1.
+The current turn is: 1. The current value is: -2.
+The current turn is: 0. The current value is: 3.
+The current turn is: 1.
+The secret values are: The secret value is: 1.
+The secret turn is: 1. Combination@45ee12a7 The secret value is: 3.
+The secret turn is: 3.
+
+Wrong sequence, resetting the dial to 0. Try again!
+
+Enter tick values to open the lock (i.e. 9 right 1 left 23 right)

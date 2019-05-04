@@ -1,0 +1,40 @@
+TESTING TO SEE IF IT CATCHES BAD ARGUMENTS
+Trying a null array
+    Passed test
+Trying an array of size 0
+    Passed test
+Trying from less than 0
+    Passed test
+Trying to greater than size
+    Passed test
+Trying from > to
+    Passed test
+
+
+TESTING TO SEE IF IT GETS THE CORRECT RESULTS
+Trying an array of size 1
+*** Failed test: returned 0 is not expect value of 4
+Trying an array of size 2, the same elements
+    Passed test
+Trying an array of size 2, second is smallest
+    Passed test
+Trying an array of size 2, first is smallest
+    Passed test
+Trying an array of size 3, first is smallest
+    Passed test
+Trying an array of size 3, second is smallest
+    Passed test
+Trying an array of size 3, third is smallest
+    Passed test
+Trying an array of size 20 (look at all values)
+    Passed test
+Trying an array of size 20 (look at first third)
+    Passed test
+Trying an array of size 20 (look at second third)
+    Passed test
+Trying an array of size 20 (look at last third excluding the last value)
+*** Failed test: returned 32 is not expected value of 9
+
+
+
+Process finished with exit code 0
