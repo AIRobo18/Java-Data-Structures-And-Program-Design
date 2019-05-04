@@ -1,0 +1,50 @@
+Enter name: 
+Robert
+happy sad ecstatic depressed mad content surprised annoyed 
+How are you feeling --> 
+depressed
+
+A. Modify profile
+B. Search for other profile
+C. Add friend
+D. Get friend's friend list
+E. Send out emergency calls
+F. Find closest friend
+G. Quit
+What would you like to do (Please type letter):
+c
+Enter user name you would like to add as friend: 
+Brandon
+
+A. Modify profile
+B. Search for other profile
+C. Add friend
+D. Get friend's friend list
+E. Send out emergency calls
+F. Find closest friend
+G. Quit
+What would you like to do (Please type letter):
+e
+Sending out emergency calls!!!!!!! DON'T WORRY, HELP IS COMING SOON
+
+A. Modify profile
+B. Search for other profile
+C. Add friend
+D. Get friend's friend list
+E. Send out emergency calls
+F. Find closest friend
+G. Quit
+What would you like to do (Please type letter):
+g
+Logging out. Good bye.
+
+A. Modify profile
+B. Search for other profile
+C. Add friend
+D. Get friend's friend list
+E. Send out emergency calls
+F. Find closest friend
+G. Quit
+What would you like to do (Please type letter):
+g
+Logging out. Good bye.
